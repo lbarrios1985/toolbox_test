@@ -4,12 +4,12 @@ const appRouter = function (app) {
     });
 
     app.get("/api/:text", function (req, res) {
-        const text = req.params.text;
+        const text = req.params.texto;
         respondHandler(text, res)
     });
 
     app.post('/api', function (req, res) {
-        const text = req.body.text;
+        const text = req.body.texto;
         respondHandler(text, res);
     });    
 }
